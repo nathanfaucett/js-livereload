@@ -10,13 +10,17 @@ var livereload = exports,
 
 
 livereload.reload = function() {
-    socket.emit("reload");
+    if (socket) {
+        socket.emit("reload");
+    }
 };
 
 livereload.close = function() {
-    socket.close();
-    server.close();
-    server = socket = null;
+    if (server) {
+        socket.close();
+        server.close();
+        server = socket = null;
+    }
 };
 
 livereload.listen = function(options) {

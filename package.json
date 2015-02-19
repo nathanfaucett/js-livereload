@@ -1,0 +1,33 @@
+{
+  "name": "livereload",
+  "version": "0.0.1",
+  "description": "livereload for the browser and node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanfaucett/livereload.git"
+  },
+  "main": "src/index.js",
+  "keywords": [
+    "livereload",
+    "livereload.js"
+  ],
+  "author": "Nathan Faucett",
+  "license": "BSD-2-Clause",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "build": "comn -f src/livereload.js -o src/livereload.min.js && uglifyjs src/livereload.min.js -o src/livereload.min.js"
+  },
+  "devDependencies": {
+    "comn": "git://github.com/nathanfaucett/comn",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-jsbeautifier": "^0.2.7",
+    "mocha": "^2.1.0",
+    "uglify-js": "^2.4.16"
+  },
+  "dependencies": {
+    "file_path": "git://github.com/nathanfaucett/file_path",
+    "socket.io": "^1.3.4",
+    "socket.io-client": "^1.3.4"
+  }
+}

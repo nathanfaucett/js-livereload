@@ -15,18 +15,20 @@
   "license": "BSD-2-Clause",
   "readmeFilename": "README.md",
   "scripts": {
-    "build": "comn -f src/livereload.js -o src/livereload.min.js && uglifyjs src/livereload.min.js -o src/livereload.min.js"
+    "build": "comn -f ./src/livereload.js -o ./src/livereload.min.js && uglifyjs ./src/livereload.min.js -o ./src/livereload.min.js"
   },
   "devDependencies": {
-    "comn": "git://github.com/nathanfaucett/comn",
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-jsbeautifier": "^0.2.7",
+    "@nathanfaucett/comn": "0.0.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-jsbeautifier": "^0.2.13",
     "uglify-js": "^2.4.16"
   },
   "dependencies": {
-    "file_path": "git://github.com/nathanfaucett/file_path",
+    "@nathanfaucett/file_path": "^0.0.2",
+    "bufferutil": "^1.2.1",
     "socket.io": "^1.3.4",
-    "socket.io-client": "^1.3.4"
+    "socket.io-client": "^1.3.4",
+    "utf-8-validate": "^1.2.1"
   }
 }

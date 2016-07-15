@@ -1,6 +1,6 @@
 {
   "name": "@nathanfaucett/livereload",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "livereload for the browser and node.js",
   "repository": {
     "type": "git",

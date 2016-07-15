@@ -1,6 +1,6 @@
 var fs = require("fs"),
     http = require("http"),
-    filePath = require("file_path"),
+    filePath = require("@nathanfaucett/file_path"),
     io = require("socket.io");
 
 

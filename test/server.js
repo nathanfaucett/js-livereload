@@ -8,5 +8,5 @@ livereload.listen({
 
 setTimeout(function reload() {
     livereload.reload();
-    livereload.close();
-}, 5000);
+    setTimeout(reload, 5000);
+});
